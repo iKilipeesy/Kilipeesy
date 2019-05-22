@@ -2,3 +2,7 @@ header{
     background-color: white;
     size: 5%;
 }
+body{
+    background-image: url("../resources/benno.PNG");
+    border-image-repeat: stretch;
+}
