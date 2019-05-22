@@ -1,8 +1,12 @@
+body{
+    width: 100%;
+    height: 100%;
+}
 header{
     background-color: white;
     size: 5%;
 }
-body{
+main{
     background-image: url("../resources/benno.PNG");
     border-image-repeat: stretch;
 }
