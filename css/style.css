@@ -6,6 +6,9 @@ body{
     height: 100%;
     margin: 0;
 }
+html, body,main{
+    height: 100%;
+}
 header{
     background-color: white;
     height: 5%;
@@ -13,9 +16,6 @@ header{
     left: 0px;
     text-align: center;
     padding-top: 2%;
-}
-main{
-    background-color: black;
 }
 .alles{
     width: 100%;
@@ -26,3 +26,24 @@ main{
     text-decoration: none;
     padding-right: 2%;
 }
+.backgroundPicture{
+    width: 100%;
+    height: auto;
+}
+.parallaxBackgroundPicture {
+    /* The image used */
+    background-image: url("../resources/csgoWallpaper.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallaxForegroundBox{
+    height:500px;
+    background-color:white;
+  }
