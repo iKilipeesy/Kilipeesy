@@ -22,6 +22,7 @@ header{
     color: #667788;
     text-decoration: none;
     padding-right: 2%;
+    letter-spacing: 3px;
 }
 #activeLink{
     color: #35a114;
@@ -33,8 +34,7 @@ a:hover{
     width: 100%;
     height: auto;
 }
-.parallaxBackgroundPicture_1 {
-    /* The image used */
+.parallaxBackgroundPictureCsGo_1, .parallaxBackgroundPictureCsGo_2 {
     background-image: url("../resources/csgoWallpaper_1.jpg");
     /* Full height */
     height: 100%; 
@@ -44,17 +44,9 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .parallaxBackgroundPicture_2 {
-    /* The image used */
-    /* background-image: url("../resources/csgoWallpaper_2.png"); */
+  .parallaxBackgroundPictureCsGo_2 {
     background-color: #000000;
-    /* Full height */
-    height: 100%; 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: none;
   }
   #csgoDeagleVid{
     max-height: 100%;
@@ -76,49 +68,35 @@ a:hover{
       line-height: 100px;
       font-size: 20px;
   }
-  .captionContainer_1{
+  .captionContainer_1, .captionContainer_2, .captionContainer_3{
       position: absolute;
       top: 50%;
       width: 100%;
       text-align: center;
   }
-  .captionSpan_1{
+  .captionSpan_1, .captionSpan_2, .captionSpan_3{
     background-color: #ac1e1e;
+    filter: drop-shadow(10px 10px 10px #ac1e1eb4);
     color: #FFFFFF;
     padding: 10px 18px 10px 18px;
     font-size: 30px;
     letter-spacing: 8px;
     margin: auto;
-    filter: drop-shadow(10px 10px 10px #ac1e1eb4);
   }
   .captionContainer_2{
-    position: absolute;
     width: 100%;
-    text-align: center;
     top: 151.5%;
   }
   .captionSpan_2{
     background-color: #c5b911;
-    color: #FFFFFF;
-    padding: 10px 18px 10px 18px;
-    font-size: 30px;
-    letter-spacing: 8px;
-    margin: auto;
     filter: drop-shadow(10px 10px 10px #c5b911c4);
   }
   .captionContainer_3{
-    position: absolute;
     width: 17%;
-    text-align: center;
     top: 185%;
     left:7.5%;
   }
   .captionSpan_3{
     background-color: #5311c5;
-    color: #FFFFFF;
-    padding: 10px 18px 10px 18px;
-    font-size: 30px;
-    letter-spacing: 8px;
-    margin: auto;
     filter: drop-shadow(10px 10px 10px #5311c5c4);
   }
