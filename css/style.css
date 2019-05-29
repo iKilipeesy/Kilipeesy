@@ -27,8 +27,24 @@ header{
 #activeLink{
     color: #35a114;
 }
-a:hover{
+.headerLinks:hover{
     color: #000000;
+}
+#steamLink{
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+#steamLink:hover{
+  color: #FFFFFF;
+}
+a.button{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
 }
 .backgroundPicture{
     width: 100%;
@@ -46,7 +62,7 @@ a:hover{
   }
   .parallaxBackgroundPictureCsGo_2 {
     background-color: #000000;
-    background-image: none;
+    background-image: url("..//resources/csgoWallpaper_2.png");
   }
   #csgoDeagleVid{
     max-height: 100%;
@@ -88,8 +104,8 @@ a:hover{
     top: 151.5%;
   }
   .captionSpan_2{
-    background-color: #c5b911;
-    filter: drop-shadow(10px 10px 10px #c5b911c4);
+    background-color: #414140;
+    filter: drop-shadow(10px 10px 4px #414140c4);
   }
   .captionContainer_3{
     width: 17%;
