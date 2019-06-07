@@ -34,15 +34,15 @@ header{
   color: #000000;
   text-decoration: none;
   letter-spacing: 3px;
+  background-color: #FFFFFF;
+  padding: 0.5% 1% 0.5% 1%;
+  font-weight: bold;
 }
 #steamLink:hover{
-  color: #FFFFFF;
+  
 }
 a.button{
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-
+  border: solid #141414 1px;
   text-decoration: none;
   color: initial;
 }
@@ -50,7 +50,7 @@ a.button{
     width: 100%;
     height: auto;
 }
-.parallaxBackgroundPictureCsGo_1, .parallaxBackgroundPictureCsGo_2 {
+.parallaxBackgroundPictureCsGo_1, .parallaxBackgroundPictureCsGo_2, .parallaxBackgroundPicturePubg_1, .parallaxBackgroundPicturePubg_2{
     background-image: url("../resources/csgoWallpaper_1.jpg");
     /* Full height */
     height: 100%; 
@@ -63,6 +63,12 @@ a.button{
   .parallaxBackgroundPictureCsGo_2 {
     background-color: #000000;
     background-image: url("..//resources/csgoWallpaper_2.png");
+  }
+  .parallaxBackgroundPicturePubg_1{
+    background-image: url("../resources/pubgWallpaper_1.jpg");
+  }
+  .parallaxBackgroundPicturePubg_2{
+    background-image: url("../resources/pubgWallpaper_2.png");
   }
   #csgoDeagleVid{
     max-height: 100%;
