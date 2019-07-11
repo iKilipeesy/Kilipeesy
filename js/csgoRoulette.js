@@ -25,7 +25,7 @@ var grenades = [ "HE", "Incendiary", "Smoke", "Flash", "Decoy" ];
 
 
 /*
-
+Starts the roulette
 */
 function startRoulette(){
 	var activeWeapons = randomWeapon(amountOfWeapons());
@@ -42,21 +42,18 @@ function randomWeaponCategory(){
 	if(randomNumber <= 20){
 		weaponCategory = weaponCategories.HEAVY;
 	}
-	else if(randomNumber <= 55){
+	else if(randomNumber <= 70){
 		weaponCategory = weaponCategories.RIFLE;
 	}
-	else if(randomNumber <= 75){
-		weaponCategory = weaponCategories.SMG;
-	}
 	else if(randomNumber <= 100){
-		weaponCategory = weaponCategories.PISTOL;
+		weaponCategory = weaponCategories.SMG;
 	}
 	
 	return weaponCategory;
 }
 
 /*
-
+Returns the weapons the user has to buy
 */
 function randomWeapon(amountOfWeapons){
 	var weapons =  new Array();
@@ -81,11 +78,14 @@ function randomWeapon(amountOfWeapons){
 		weapons[2] = "Zeus";
 	}
 	
+
+	
 	return weapons;
 }
 
 /*
-
+Decides if the user has to buy a primary weapon
+Returns the amount of weapons
 */
 function amountOfWeapons(){
 
