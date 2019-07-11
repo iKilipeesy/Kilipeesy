@@ -22,29 +22,44 @@ var smg = [ "UMP-45", "MP5/MP7", "PP-Bizon", "MP9/MAC-10", "P90" ];
 
 var grenades = [ "HE", "Incendiary", "Smoke", "Flash", "Decoy" ];
 
+
 /*
 Returns a random weapon category
  */
 function randomWeaponCategory(){
+	var weaponCategory;
 	var randomNumber = Math.floor(Math.random() * 100);
 	
 	if(randomNumber <= 20){
-		activeWeaponCategeory = weaponCategories.HEAVY;
+		weaponCategeory = weaponCategories.HEAVY;
 	}
 	else if(randomNumber <= 55){
-		activeWeaponCategeory = weaponCategories.RIFLE;
+		weaponCategeory = weaponCategories.RIFLE;
 	}
 	else if(randomNumber <= 75){
-		activeWeaponCategeory = weaponCategories.SMG;
+		weaponCategeory = weaponCategories.SMG;
 	}
 	else if(randomNumber <= 100){
-		activeWeaponCategeory = weaponCategories.PISTOL;
+		weaponCategeory = weaponCategories.PISTOL;
 	}
 	
-	return activeWeaponCategeory;
+	return weaponCategeory;
 }
 
 function randomWeapon(weaponCategory){
 	var randomNumber = Math.floor(Math.random() * 100);
-		
+
+	if(weaponCategory == weaponCategories.RIFLE){
+
+	}
+	if(weaponCategory == weaponCategories.HEAVY){
+
+	}
+	if(weaponCategory == weaponCategories.PISTOL){
+
+	}
+	if(weaponCategory == weaponCategories.SMG){
+
+	}
+	
 }
