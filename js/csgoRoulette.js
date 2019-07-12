@@ -15,7 +15,7 @@ var rifle = [ "AK47/M4", "Galil/Famas", "Scout/SSG 08", "Awp", "Autosniper", "Au
 
 var heavy = [ "Negev", "M249", "Nova", "XM1014", "MAG-7/Pump" ];
 
-var pistol = [ "Deagle/R8 Revolver", "Dual Berretas", "USP/P2K/Glock", "P250", 
+var pistol = [ "Deagle", "Dual Berretas", "USP/P2K/Glock", "P250", 
 				"CZ75-Auto/Five-Seven/Tec-9" ];
 
 var smg = [ "UMP-45", "MP5/MP7", "PP-Bizon", "MP9/MAC-10", "P90" ];
@@ -152,7 +152,7 @@ function randomWeapon(amountOfWeapons){
 					weapons[1] = "MAG-7";
 				}
 				else{
-					weapons[1] = "Pump action";
+					weapons[1] = "Sawed-off";
 				}
 			}
 		}
