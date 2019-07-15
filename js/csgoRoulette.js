@@ -11,14 +11,14 @@ const weaponCategories = {
 	GRENADE: "grenade"
 }
 
-var rifle = [ "AK47/M4", "Galil/Famas", "Scout/SSG 08", "Awp", "Autosniper", "Aug/Krieg" ];
+var rifle = [ "AK47/M4", "Galil/Famas", "Scout", "Awp", "Autosniper", "Aug/Krieg" ];
 
 var heavy = [ "Negev", "M249", "Nova", "XM1014", "MAG-7/Pump" ];
 
-var pistol = [ "Deagle", "Dual Berretas", "USP/P2K/Glock", "P250", 
+var pistol = [ "Deagle", "DualBerretas", "USP/P2K/Glock", "P250", 
 				"CZ75-Auto/Five-Seven/Tec-9" ];
 
-var smg = [ "UMP-45", "MP5/MP7", "PP-Bizon", "MP9/MAC-10", "P90" ];
+var smg = [ "UMP-45", "MP7", "PP-Bizon", "MP9/MAC-10", "P90" ];
 
 var grenades = [ "HE", "Incendiary", "Smoke", "Flash", "Decoy" ];
 
@@ -35,7 +35,7 @@ function startRoulette(){
 	//Change the text of the span to the randomly generated pistol
 	document.getElementById("secondaryWeaponName").innerHTML = activeWeapons[0];
 
-	//Change the text of the span to the randomly generated primary if there is one
+	//Change the text of the span to the randomly generated primary weapon if there is one
 	if (activeWeapons[1] != null) {
 		document.getElementById("primaryWeaponName").innerHTML = activeWeapons[1];
 	}
@@ -43,6 +43,14 @@ function startRoulette(){
 		document.getElementById("primaryWeaponName").innerHTML = "None"
 	}
 
+	document.getElementById("utilityName").innerHTML = activeWeapons[2];
+
+	//Change the background picture to the randomly generated weapons
+	document.getElementById("primaryWeaponPicture").style.backgroundImage = "url(resources/csgo/weapons/" + activeWeapons[1] + ".png)";
+	document.getElementById("secondaryWeaponPicture").style.backgroundImage = "url(resources/csgo/weapons/" + activeWeapons[0] + ".png)";
+
+	//Change the background picture to a randomly generated utility item
+	document.getElementById("utilityPicture").style.backgroundImage = "url(resources/csgo/weapons/" + activeWeapons[2] + ".png)";
 }
 
 /*
@@ -97,7 +105,7 @@ function randomWeapon(amountOfWeapons){
 
 	if (weapons[0] == pistol[2]) {
 		if (ct == true) {
-			weapons[0] = "USP-S/P2000";
+			weapons[0] = "USP-S";
 		}
 		else{
 			weapons[0] = "Glock-18";
@@ -105,10 +113,10 @@ function randomWeapon(amountOfWeapons){
 	}
 	if (weapons[0] == pistol[4]) {
 		if (ct == true) {
-			weapons[0] = "CZ75-Auto/Five-Seven";
+			weapons[0] = "CZ75-Auto";
 		}
 		else{
-			weapons[0] = "CZ75-Auto/Tec-9";
+			weapons[0] = "CZ75-Auto";
 		}
 	}
 
@@ -121,7 +129,7 @@ function randomWeapon(amountOfWeapons){
 			//Changes the weapon to either a ct or t side weapon
 			if (weapons[1] == rifle[0]) {
 				if (ct == true) {
-					weapons[1] = "M4A4/M4A1-S";
+					weapons[1] = "M4A4";
 				}
 				else{
 					weapons[1] = "AK-47";
@@ -173,7 +181,9 @@ function randomWeapon(amountOfWeapons){
 	if (Math.floor(Math.random() * 100) >= 90) {
 		weapons[2] = "Zeus";
 	}
-	
+	else{
+		weapons[2] = grenades[Math.floor(Math.random() * 5)];
+	}
 
 	
 	return weapons;

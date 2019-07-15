@@ -173,8 +173,8 @@ img{
   text-transform: uppercase;
   background-color: white;
   border: solid black 3px;
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-top: 3%;
+  margin-left: 2%;
   transition: 0.5s;
 }
 #startRouletteButton:hover{
@@ -205,6 +205,39 @@ img{
 }
 #changeSideButton:active{
   box-shadow: 2px 2px 2px black;
+}
+#weaponsContainer{
+  width: 100%;
+}
+#primaryWeaponContainer{
+  width: 45%;
+  float: left;
+}
+#secondaryWeaponContainer{
+  width: 45%;
+  float: left;
+}
+#utilityContainer{
+  width: 10%;
+  float: left;
+}
+#primaryWeaponPicture{
+  width: 40%;
+  height: 230px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#secondaryWeaponPicture{
+  width: 40%;
+  height: 230px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#utilityPicture{
+  margin-top: 10%;
+  background-size: 100%;
+  height: 230px;
+  background-repeat: no-repeat;
 }
 
 /***********************************************************************
