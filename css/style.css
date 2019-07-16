@@ -17,10 +17,13 @@ header{
     left: 0px;
     text-align: center;
     padding-top: 2%;
-    filter: drop-shadow(10px 10px 10px #000000);
+    filter: drop-shadow(10px 10px 10px #35a1144f);
 }
 button::-moz-focus-inner, a::-moz-focus-inner {
   border: 0;
+}
+a{
+  outline: 0;
 }
 .headerLinks{
     color: #667788;
@@ -66,7 +69,7 @@ a.button{
   }
   .parallaxBackgroundPictureCsGo_2 {
     background-color: #000000;
-    background-image: url("..//resources/csgo/csgoWallpaper_2.png");
+    background-image: url("../resources/csgo/csgoWallpaper_2.png");
   }
   .parallaxBackgroundPicturePubg_1{
     background-image: url("../resources/pubg/pubgWallpaper_1.jpg");
@@ -133,6 +136,9 @@ a.button{
   #csgoRouletteLink:hover{
     color: #b8b5b5;
   }
+  #csgoRouletteLink:active{
+    color: #5c5c5c
+  }
 
 /***********************************************************************
 ******************************PUBG ROULETTE*****************************
@@ -163,25 +169,34 @@ img{
 /***********************************************************************
 ******************************CSGO ROULETTE*****************************
 ***********************************************************************/
+#mainContainer{
+  background-image: url("../resources/csgo/dust2.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #startRouletteButton{
   width: 8%;
-  height: 7%;
-  color:black;
+  height: 45px;
+  color:#8a9aa5;
   font-family: 'Oswald';
   font-size: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background-color: white;
-  border: solid black 3px;
-  margin-top: 3%;
+  background-color: #000000d7;
+  border: solid #8a9aa5 3px;
+  margin-top: 8%;
   margin-left: 2%;
   transition: 0.5s;
 }
 #startRouletteButton:hover{
-  color:white;
-  background-color: black;
-  border: solid black 3px;
+  color:#000000;
+  background-color: #8a9aa5;
+  border: solid #8a9aa5 3px;
   cursor: pointer;
+  font-weight: bold;
 }
 #startRouletteButton:active{
   transition: 0.5s;
@@ -208,33 +223,48 @@ img{
 }
 #weaponsContainer{
   width: 100%;
+  margin-top: 4%;
+  color: white;
+  text-align: center;
 }
 #primaryWeaponContainer{
-  width: 45%;
+  width: 44.9%;
   float: left;
+  background: rgba(24, 24, 24, 0.8);
+  border-top: solid white 1px;
+  border-bottom: solid white 1px;
+  border-left: solid white 1px;
 }
 #secondaryWeaponContainer{
-  width: 45%;
+  width: 44.9%;
   float: left;
+  background: rgba(24, 24, 24, 0.8);
+  border-top: solid white 1px;
+  border-bottom: solid white 1px;
 }
 #utilityContainer{
   width: 10%;
   float: left;
+  background: rgba(24, 24, 24, 0.8);
+  border-top: solid white 1px;
+  border-bottom: solid white 1px;
+  border-right: solid white 1px;
 }
 #primaryWeaponPicture{
   width: 40%;
   height: 230px;
   background-size: 100%;
   background-repeat: no-repeat;
+  margin: 0% 30% 0% 30%;
 }
 #secondaryWeaponPicture{
   width: 40%;
   height: 230px;
   background-size: 100%;
   background-repeat: no-repeat;
+  margin: 0% 30% 0% 30%;
 }
 #utilityPicture{
-  margin-top: 10%;
   background-size: 100%;
   height: 230px;
   background-repeat: no-repeat;

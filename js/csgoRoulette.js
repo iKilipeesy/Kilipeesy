@@ -2,7 +2,7 @@
 var ct = true;
 var activeWeaponCategeory;
 
-// Arrays, enum
+// Arrays, enumeration
 const weaponCategories = {
 	RIFLE: "rifle",
 	HEAVY: "heavy",
@@ -55,7 +55,7 @@ function startRoulette(){
 
 /*
 *
-
+Changes the background picture of the button to change sides and changes the boolean
 *
 */
 function changeSide(){
@@ -73,6 +73,7 @@ function changeSide(){
 /*
 *
 Returns a random weapon category
+Gets called from randomWeapon function
 *
 */
 function randomWeaponCategory(){
@@ -96,13 +97,14 @@ function randomWeaponCategory(){
 /*
 *
 Returns the weapons the user has to buy
+Gets called from startRoulette function
 *
 */
 function randomWeapon(amountOfWeapons){
 	var weapons =  new Array();
 
 	weapons[0] = pistol[Math.floor(Math.random() * 5)];
-
+	//Changes the weapon the either a ct or t side weapon
 	if (weapons[0] == pistol[2]) {
 		if (ct == true) {
 			weapons[0] = "USP-S";
@@ -177,10 +179,11 @@ function randomWeapon(amountOfWeapons){
 			}
 		}	
 	}
-
+	//10% chance to get a zeus
 	if (Math.floor(Math.random() * 100) >= 90) {
 		weapons[2] = "Zeus";
 	}
+	//90% chance to get a random grenade
 	else{
 		weapons[2] = grenades[Math.floor(Math.random() * 5)];
 	}
@@ -194,6 +197,7 @@ function randomWeapon(amountOfWeapons){
 *
 Decides if the user has to buy a primary weapon
 Returns the amount of weapons
+Gets called as the parameter of the randomWeapon function
 *
 */
 function amountOfWeapons(){
