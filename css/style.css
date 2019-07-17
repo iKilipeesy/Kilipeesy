@@ -197,6 +197,7 @@ img{
   border: solid #8a9aa5 3px;
   cursor: pointer;
   font-weight: bold;
+  box-shadow: 4px 4px 2px #000000;   
 }
 #startRouletteButton:active{
   transition: 0.5s;
