@@ -143,7 +143,13 @@ a.button{
 /***********************************************************************
 ******************************PUBG ROULETTE*****************************
 ***********************************************************************/
-.mapPictureContainer{
+#mainContainerPubg{
+	background-image: url("../resources/pubg/pubgWallpaperRoulette.jpg");
+}
+#startRouletteButtonPubg{
+
+}
+.mapContainer{
   width: 33%;
   margin-top: 2%;
   float:left;
@@ -169,7 +175,7 @@ img{
 /***********************************************************************
 ******************************CSGO ROULETTE*****************************
 ***********************************************************************/
-#mainContainer{
+#mainContainer, #mainContainerPubg{
   background-image: url("../resources/csgo/dust2.jpg");
   height: 100%;
   background-attachment: fixed;
@@ -177,7 +183,7 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
 }
-#startRouletteButton{
+#startRouletteButton, #startRouletteButtonPubg{
   width: 8%;
   height: 45px;
   color:#8a9aa5;
@@ -191,7 +197,7 @@ img{
   margin-left: 2%;
   transition: 0.5s;
 }
-#startRouletteButton:hover{
+#startRouletteButton:hover, #startRouletteButtonPubg:hover{
   color:#000000;
   background-color: #8a9aa5;
   border: solid #8a9aa5 3px;
@@ -199,7 +205,7 @@ img{
   font-weight: bold;
   box-shadow: 4px 4px 2px #000000;   
 }
-#startRouletteButton:active{
+#startRouletteButton:active, #startRouletteButtonPubg:active{
   transition: 0.5s;
   letter-spacing: 4px;
 }

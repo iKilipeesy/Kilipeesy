@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
 
     <!-- Included JS -->
-    <link type="text/javascript" href="js/pubgRoulette.js">
+    <script src="js/pubgRoulette.js"></script>
 
   </head>
 
@@ -26,22 +26,26 @@
     </header>
     
     <main>
-        <div class="mapPictureContainer">
-            <button class="mapPictureBtn" id="erangelBtn" onclick="SelectMap(this)">
+    <div id="mainContainerPubg">
+        <div class="mapContainer">
+            <button class="mapPictureBtn" id="erangelBtn" onclick="SelectMap(this)" value="erangel">
                 <img src="resources/pubg/Maps/erangelMap.JPG" class="mapPicture">
             </button>
-            <button class="mapPictureBtn" id="miramarBtn" onclick="SelectMap(this)">
+            <button class="mapPictureBtn" id="miramarBtn" onclick="SelectMap(this)" value="miramar">
                 <img src="resources/pubg/Maps/miramarMap.jpeg" class="mapPicture">
             </button>
-            <button class="mapPictureBtn" id="sanhokBtn" onclick="SelectMap(this)">
+            <button class="mapPictureBtn" id="sanhokBtn" onclick="SelectMap(this)" value="sanhok">
                 <img src="resources/pubg/Maps/sanhokMap.jpeg" class="mapPicture">
             </button>
-            <button class="mapPictureBtn" id="vikendiBtn" onclick="SelectMap(this)">
+            <button class="mapPictureBtn" id="vikendiBtn" onclick="SelectMap(this)" value="vikendi">
                 <img src="resources/pubg/Maps/vikendiMap.jpg" class="mapPicture">
             </button>
         </div>
 
-
+	<button id="startRouletteButtonPubg" onclick="StartRoulette()">
+		Start
+	</button>
+	</div>
           <div class="footer">
             © Kenny Betschart
         </div>
