@@ -144,10 +144,15 @@ a.button{
 ******************************PUBG ROULETTE*****************************
 ***********************************************************************/
 #mainContainerPubg{
-	background-image: url("../resources/pubg/pubgWallpaperRoulette.jpg");
+	background-image: url("../resources/pubg/pubgWallpaperRoulette.jpg") !important;
 }
 #startRouletteButtonPubg{
-
+  color: #FFFFFF !important;
+  border: solid #FFFFFF 3px !important;
+}
+#startRouletteButtonPubg:hover{
+  color: #000000d7 !important;
+  background-color: #FFFFFF !important;
 }
 .mapContainer{
   width: 33%;

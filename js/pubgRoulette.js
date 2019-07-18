@@ -25,7 +25,6 @@ function SelectMap(button){
 
 	button.style.border = "solid red 2px";
 	activeMap = button;
-	console.log(button.value);
 }
 
 /*
@@ -38,16 +37,20 @@ function RandomDropSpot(){
 		case "erangel":
 			dropSpot = erangelDrops[Math.floor(Math.random() * erangelDrops.length)]; 		
 			break;
+
 		case "miramar":
 			dropSpot = miramarDrops[Math.floor(Math.random() * miramarDrops.length)];
 			break;
+
 		case "sanhok": 
 			dropSpot = sanhokDrops[Math.floor(Math.random() * sanhokDrops.length)];
 			break;
+
 		case "vikendi":
 			dropSpot = vikendiDrops[Math.floor(Math.random() * vikendiDrops.length)];
 			break;
-		case default:
+
+		default:
 			dropSpot = "Error";
 			break;
 	}
