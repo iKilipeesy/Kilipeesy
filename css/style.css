@@ -175,8 +175,28 @@ a.button{
 }
 img{
   display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
+/***********************************************************************
+******************************TWITCH EMBED******************************
+***********************************************************************/
+#twitchEmbed
+{
+  
+}
+#alles{
+  width: 100%;
+  min-height: 1080px;
+  background-image: url("../resources/homeWallpaper_1.jpg");
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /***********************************************************************
 ******************************CSGO ROULETTE*****************************
 ***********************************************************************/
